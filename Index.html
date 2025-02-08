@@ -7,7 +7,7 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         /* Add CSS for text animation */
         .text-animation {
             display: inline-block;
@@ -35,6 +35,7 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
+            <a href="#skills">Skills</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
@@ -53,7 +54,6 @@
             <p>
                 Pain itself is very painful, but it is a great escape from responsibility for those who accuse it of being free from error...
             </p>
-           
             <a href="#contact" class="btn">Hire Me</a>
         </div>
     </section>
@@ -61,70 +61,120 @@
     <!-- About Section -->
     <section id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I am a web developer with expertise in front-end and back-end development, working to create seamless user experiences.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hi, I'm Timothy, a passionate web developer with a keen interest in crafting interactive and responsive websites.
+                        I specialize in front-end development, particularly in HTML, CSS, JavaScript, and React. I enjoy bringing
+                        creative ideas to life and continuously improving my skills.
+                    </p>
+                    <p>
+                        With a strong background in problem-solving and a desire to learn new technologies, I aim to deliver
+                        high-quality web experiences. Whether it's building an engaging user interface or optimizing website performance,
+                        I am committed to delivering results.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
+
     <!-- Skills Section -->
-<section id="skills">
-  <div class="skills-content">
-      <h2>My Skills</h2>
-      <div class="skills-list">
-          <div class="skill-item">
-              <h3>HTML</h3>
-              <div class="progress-bar">
-                  <div class="progress" style="width: 90%;"></div>
-              </div>
-          </div>
-          <div class="skill-item">
-              <h3>CSS</h3>
-              <div class="progress-bar">
-                  <div class="progress" style="width: 85%;"></div>
-              </div>
-          </div>
-          <div class="skill-item">
-              <h3>JavaScript</h3>
-              <div class="progress-bar">
-                  <div class="progress" style="width: 80%;"></div>
-              </div>
-          </div>
-          <div class="skill-item">
-              <h3>React</h3>
-              <div class="progress-bar">
-                  <div class="progress" style="width: 75%;"></div>
-              </div>
-          </div>
-          <div class="skill-item">
-              <h3>Node.js</h3>
-              <div class="progress-bar">
-                  <div class="progress" style="width: 70%;"></div>
-              </div>
-          </div>
-          <div class="skill-item">
-              <h3>Git</h3>
-              <div class="progress-bar">
-                  <div class="progress" style="width: 85%;"></div>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
-
-
-    <!-- Services Section -->
-    <section id="services">
+    <section id="skills" class="skills">
         <div class="container">
-            <h2>Services</h2>
-            <div class="service">
-                <h3>Custom Web Development</h3>
-                <p>Tailored solutions for unique business needs.</p>
-            </div>
-            <div class="service">
-                <h3>UI/UX Design</h3>
-                <p>Creating user-friendly and responsive interfaces.</p>
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-list">
+                <!-- Git & GitHub -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-github"></i> <!-- GitHub icon -->
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control using Git and collaboration through GitHub for efficient project management.</p>
+                </div>
+    
+                <!-- HTML & CSS -->
+                <div class="skill-card">
+                    <div class="skill-icons">
+                        <i class="fab fa-html5"></i> <!-- HTML5 icon -->
+                        <i class="fab fa-css3-alt"></i> <!-- CSS3 icon -->
+                    </div>
+                    <h3>HTML & CSS</h3>
+                    <p>Structure and style web pages with HTML5 and CSS3, creating responsive and visually appealing designs.</p>
+                </div>
+    
+                <!-- JavaScript & TypeScript -->
+                <div class="skill-card">
+                    <div class="skill-icons">
+                        <i class="fab fa-js"></i> <!-- JavaScript icon -->
+                        <i class="fab fa-js-square"></i> <!-- TypeScript icon -->
+                    </div>
+                    <h3>JavaScript & TypeScript</h3>
+                    <p>Enhance interactivity with JavaScript and add type safety and scalability using TypeScript.</p>
+                </div>
+    
+                <!-- React.js -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i> <!-- React.js icon -->
+                    </div>
+                    <h3>React.js</h3>
+                    <p>Build interactive UIs with React.js, using component-based architecture for scalability.</p>
+                </div>
+    
+                <!-- Express -->
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i> <!-- Node.js icon (for Express) -->
+                    </div>
+                    <h3>Express</h3>
+                    <p>Create backend APIs with Express.js, simplifying server-side operations and routing.</p>
+                </div>
+    
+                <!-- PostgreSQL & MySQL -->
+                <div class="skill-card">
+                    <div class="skill-icons">
+                        <i class="fab fa-postgresql"></i> <!-- PostgreSQL icon -->
+                        <i class="fas fa-database"></i> <!-- MySQL icon (using database icon) -->
+                    </div>
+                    <h3>PostgreSQL & MySQL</h3>
+                    <p>Manage relational databases with PostgreSQL and MySQL, using SQL for querying and maintaining structured data.</p>
+                </div>
             </div>
         </div>
     </section>
+    
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-list">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa fa-laptop"></i> <!-- You can replace the icon -->
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>I create responsive and visually appealing websites, ensuring a seamless user experience.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa fa-mobile-alt"></i> <!-- Icon for mobile development -->
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Building mobile applications that are fast, user-friendly, and intuitive.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa fa-paint-brush"></i> <!-- Icon for design -->
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing interactive and intuitive interfaces that provide exceptional user experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <!-- Portfolio Section -->
     <section id="portfolio">
@@ -132,7 +182,7 @@
             <h2>My Work</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <a href="project1.jpg" class="https://tmothykhalayi.github.io/Bankist-Website/bank.htmlc:\Users\PC\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\F8580959E35CB0934479BB007FB241C2\WhatsApp Image 2025-02-01 at 00.08.33_87351219.jpg">
+                    <a href="https://tmothykhalayi.github.io/Bankist-Website/bank.html">
                         <img src="project1.jpg" alt="Project 1">
                     </a>
                 </div>
@@ -160,12 +210,12 @@
 
     <!-- Footer Section -->
     <footer>
-      <div class="social-icons">
-        <a href="https://twitter.com/KhalayiNandwa"><i class="bx bxl-twitter"></i></a>
-        <a href="https://github.com/tmothykhalayi"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/timothy-nandwa"><i class="bx bxl-linkedin"></i></a>
-        <a href="mailto:Timothykhalayi96@gmail.com"><i class="bx bxl-envelope"></i></a>
-    </div>
+        <div class="social-icons">
+            <a href="https://twitter.com/KhalayiNandwa"><i class="bx bxl-twitter"></i></a>
+            <a href="https://github.com/tmothykhalayi"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/timothy-nandwa"><i class="bx bxl-linkedin"></i></a>
+            <a href="mailto:Timothykhalayi96@gmail.com"><i class="bx bxl-envelope"></i></a>
+        </div>
     </footer>
 
     <!-- JavaScript for smooth scroll and form validation -->
@@ -185,7 +235,6 @@
         const menuIcon = document.getElementById('menu-icon');
         const navbar = document.querySelector('.navbar');
 
-        // Toggle the navbar visibility when the menu icon is clicked
         menuIcon.addEventListener('click', () => {
             navbar.classList.toggle('active');
         });
