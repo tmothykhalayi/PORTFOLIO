@@ -75,6 +75,7 @@ header {
   color: var(--main-color);
   border-bottom: 3px solid var(--main-color);
   background-color: rgba(4, 255, 251, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Menu Icon (Mobile) */
@@ -82,6 +83,11 @@ header {
   font-size: 3.6rem;
   color: var(--main-color);
   display: none;
+  transition: transform 0.3s ease;
+}
+
+#menu-icon.active {
+  transform: rotate(90deg);
 }
 
 /* Home Section */
@@ -166,6 +172,7 @@ header {
 .btn:hover {
   background-color: white;
   color: #111;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Navbar Toggle for Mobile */
@@ -193,6 +200,18 @@ header {
   #menu-icon {
       display: block;
   }
+
+  header {
+      padding: 2rem 5%;
+  }
+
+  body {
+      font-size: 1.4rem; /* slightly smaller font size */
+  }
+
+  .home-content h1 {
+      font-size: 3.6rem;
+  }
 }
 
 /* About Section */
@@ -213,7 +232,6 @@ header {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Skills Section */
 /* Skills Section */
 .skills {
   background-color: #f9f9f9;
@@ -278,7 +296,6 @@ header {
   }
 }
 
-
 /* Portfolio Section */
 #portfolio {
   padding: 5rem 10%;
@@ -295,6 +312,13 @@ header {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio Grid Adjustment for Small Screens */
+@media (max-width: 768px) {
+  .portfolio-grid {
+      grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* Contact Section */
@@ -344,6 +368,7 @@ footer .social-icons a {
   margin: 0 1rem;
   font-size: 2rem;
 }
+
 /* Services Section */
 .services {
   background-color: #f4f4f4;
