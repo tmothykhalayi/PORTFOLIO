@@ -295,28 +295,52 @@ header {
       align-items: center;
   }
 }
-
 /* Portfolio Section */
-#portfolio {
+#project {
   padding: 5rem 10%;
 }
 
-.portfolio-grid {
+.project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
-.portfolio-item img {
+.project-item img {
   width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-item img:hover {
+  transform: scale(1.05); /* Add subtle zoom effect on hover */
 }
 
 /* Portfolio Grid Adjustment for Small Screens */
+@media (max-width: 1024px) {
+  .project-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
-  .portfolio-grid {
+  .project-grid {
+      grid-template-columns: 1fr; /* Stack items in a single column */
+  }
+}
+
+/* Smooth Scroll Behavior (for clickable project items) */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Portfolio Grid Adjustment for Small Screens */
+@media (max-width: 768px) {
+  .project-grid {
       grid-template-columns: 1fr 1fr;
   }
 }
