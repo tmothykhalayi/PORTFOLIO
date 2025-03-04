@@ -23,6 +23,6 @@ Skills Section: Update the skill names and progress percentages to match your ow
 Social Media Links: Update the social media links in the Home section with your own URLs (LinkedIn, GitHub, Twitter, etc.).
 About Section: Modify the text in the "About" section to provide more details about yourself.
 Contributions
-Feel free to fork the repository and submit pull requests for improvements. Contributions are welcome!
+Feel free to fork the repository and submit pull requests for improvements. 
 
 
