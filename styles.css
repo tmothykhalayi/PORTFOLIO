@@ -100,7 +100,7 @@ header {
 }
 
 .home-img img {
-  width: 100%;
+  width: 200%;
   height: auto;
   max-width: 600px;
 }
@@ -295,6 +295,7 @@ header {
       align-items: center;
   }
 }
+
 /* Portfolio Section */
 #project {
   padding: 5rem 10%;
@@ -335,14 +336,6 @@ header {
 /* Smooth Scroll Behavior (for clickable project items) */
 html {
   scroll-behavior: smooth;
-}
-
-
-/* Portfolio Grid Adjustment for Small Screens */
-@media (max-width: 768px) {
-  .project-grid {
-      grid-template-columns: 1fr 1fr;
-  }
 }
 
 /* Contact Section */
