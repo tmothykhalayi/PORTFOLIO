@@ -100,13 +100,17 @@ header {
 }
 
 .home-img img {
-  width: 200%;
-  height: auto;
   max-width: 600px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%; /* Circular image */
+  margin-bottom: 20px;
+  border: 4px solid #04fffb;
 }
 
 .home-content {
   max-width: 500px;
+  align-items: center;
 }
 
 .home-content h1 {
